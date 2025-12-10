@@ -4,7 +4,7 @@ name: 部署到 GitHub Pages
 on:
   # 当推送到 main 分支时触发
   push:
-    branches: [ main ]
+    branches: [ master ]
   
   # 允许手动触发
   workflow_dispatch:
