@@ -1,17 +1,8 @@
 ---
-
+import Layout from "../layouts/TauLayout.astro";
+const pageTitle = "Radiqal's Blog";
 ---
-
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<a href="/about/">About</a>
-		<h1>Radiqal</h1>
-	</body>
-</html>
+<Layout pageTitle={pageTitle}>
+	<h1>Home</h1>
+	<p>很抱歉，你的请求已失败。请重试。原因: Request Failed: 400 "error":"message":"Requested model not available for session","code":""</p>
+</Layout>
