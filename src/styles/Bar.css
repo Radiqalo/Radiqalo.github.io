@@ -3,7 +3,7 @@
         src: url("../../public/fonts/Sans-Normalcy.woff2") format("woff2"),
 }
 
-nav{
+.top{
         height: 40px;
         background-color: #333;
         box-shadow: 0 1px 2px #666;
@@ -18,9 +18,14 @@ nav{
 }
 
 #logo{
-        background-color: #333;
         font-family: "Sans-Normalcy";
         font-size: 30px;
+}
+
+#logo{
+        position: absolute;
+        left: 5px;
+        top: -5px;
 }
 
 nav ul li{
@@ -29,13 +34,16 @@ nav ul li{
         width: 100px;
         line-height: 40px;
         text-align: center;
+        z-index: 10;
 }
 
-nav li ul{
+nav > ul{
         position: absolute;
+        /* top: 40px; */
+        right: 0;
 }
 
-nav ul a{
+nav a, .logo a{
         color: white;
         display: block;
 }
