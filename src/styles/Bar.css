@@ -1,3 +1,8 @@
+@font-face {
+        font-family: "Sans-Normalcy";
+        src: url("public/fonts/Sans-Normalcy.woff2") format("woff2"),
+}
+
 nav{
         height: 40px;
         background-color: #333;
@@ -14,6 +19,8 @@ nav{
 
 #logo{
         background-color: #333;
+        font-family: "Sans-Normalcy";
+        font-size: 30px;
 }
 
 nav ul li{
