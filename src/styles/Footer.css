@@ -1,0 +1,20 @@
+footer{
+        width: 100%;
+        max-width: 900px;
+        padding: 30px;
+        box-sizing: border-box;
+        margin: 0 auto;
+        margin-bottom: 50px;
+}
+
+footer{
+        background: white;
+        border-radius: 8px;
+        min-height: 100px;
+        box-shadow: 0 2px 10px #666;
+}
+
+footer{
+        position: relative;
+        top: 20px;
+}
