@@ -1,8 +1,6 @@
 ---
 import NavBar from '../components/NavBar.astro';
 import Footer from '../components/Footer.astro';
-import Main from '../components/Main.astro';
-
 import "../styles/Tau.css";
 
 const { pageTitle } = Astro.props;
@@ -14,16 +12,18 @@ const { pageTitle } = Astro.props;
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{pageTitle} - Radiqal's Blog</title>
+		<script src="https://code.iconify.design/3/3.1.1/iconify.min.js"></script>
 	</head>
 	<body>
                 <header class="header">
 			<!-- <div class="toppic"></div> -->
 			<NavBar />
 		</header>
-		<Main>
-			<slot />
-		</Main>
-		<div class="divider" />
+		<main class="main">
+			<div class="container">
+				<slot />
+			</div>
+		</main>
                 <Footer />
         </body>
 </html>
