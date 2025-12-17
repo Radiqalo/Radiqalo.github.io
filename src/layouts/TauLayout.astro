@@ -1,21 +1,26 @@
 ---
-import NavBar from '../components/NavBar.astro';
-import Footer from '../components/Footer.astro';
-import "../styles/Tau.css";
+import NavBar from "../components/NavBar.astro";
+import Footer from "../components/Footer.astro";
+import "../styles/Tau.scss";
 
 const { pageTitle } = Astro.props;
 ---
+
 <html lang="zh_CN">
 	<head>
 		<meta charset="utf-8" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1"
+		/>
 		<meta name="generator" content={Astro.generator} />
 		<title>{pageTitle} - Radiqal's Blog</title>
-		<script src="https://code.iconify.design/3/3.1.1/iconify.min.js"></script>
+		<script src="https://code.iconify.design/3/3.1.1/iconify.min.js"
+		></script>
 	</head>
 	<body>
-                <header class="header">
+		<header class="header">
 			<!-- <div class="toppic"></div> -->
 			<NavBar />
 		</header>
@@ -24,9 +29,6 @@ const { pageTitle } = Astro.props;
 				<slot />
 			</div>
 		</main>
-                <Footer />
-        </body>
+		<Footer />
+	</body>
 </html>
-
-
-

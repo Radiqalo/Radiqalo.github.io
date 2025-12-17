@@ -16,6 +16,7 @@
     "preact": "^10.28.0"
   },
   "devDependencies": {
-    "astro-icon": "^1.1.5"
+    "astro-icon": "^1.1.5",
+    "sass-embedded": "^1.97.0"
   }
 }

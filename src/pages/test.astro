@@ -3,31 +3,36 @@ import TopMenu from "../components/TopMenu.astro";
 import Layout from "../layouts/TauLayout.astro";
 const pageTitle = "Test Page";
 ---
-<Layout pageTitle={pageTitle}>
 
+<Layout pageTitle={pageTitle}>
 	<style>
 		.test {
 			height: 60px;
 		}
 	</style>
 	<h1>标题Title</h1>
-	<p>很抱歉，你的请求已失败。请重试。原因: Request Failed: 400 "error":"message":"Requested model not available for session","code":""</p>
+	<p>
+		很抱歉，你的请求已失败。请重试。原因: Request Failed: 400
+		"error":"message":"Requested model not available for
+		session","code":""
+	</p>
 	<p>这是一个测试<a href="#">链接</a>页面。</p>
 	<blockquote>
 		引用块示例引用块示例引用块示例引用块示例引用块示例引用块示例引用块示例引用块示例引用块示例引用块示例引用块示例引用块示例引用块示例引用块示例引用块示例引用块示例引用块示例引用块示例引用块示例引用块示例
 		<p>一条分割线</p>
 		<hr />
-		<blockquote>
-			嵌套引用块
-		</blockquote>
+		<blockquote>嵌套引用块</blockquote>
 	</blockquote>
 	<p>这是代码示例1：<code>padding: 0</code></p>
 	<div class="test">
-	<TopMenu title="测试菜单" style=".dropdown-title { border: 2px solid red; }">
-		<li><a href="/">首页</a></li>
-		<li><a href="/about">关于我</a></li>
-		<li><a href="/blog">博客</a></li>
-		<li><a href="/theme">主题</a></li>
-	</TopMenu>
+		<TopMenu
+			title="测试菜单"
+			style=".dropdown-title { border: 2px solid red; }"
+		>
+			<li><a href="/">首页</a></li>
+			<li><a href="/about">关于我</a></li>
+			<li><a href="/blog">博客</a></li>
+			<li><a href="/theme">主题</a></li>
+		</TopMenu>
 	</div>
 </Layout>

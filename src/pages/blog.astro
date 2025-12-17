@@ -2,42 +2,53 @@
 import { getCollection } from "astro:content";
 import Layout from "../layouts/TauLayout.astro";
 import Post from "../components/Post.astro";
-import "../styles/Table.css";
+import "../styles/Table.scss";
 
 const pageTitle = "Blog Posts";
 const allPosts = await getCollection("blog");
 ---
-<Layout pageTitle={pageTitle}>
-  <h1>Posts</h1>
-  <ul>
-    {
-      allPosts.map((post) => (
-        <Post url={`/posts/${post.id}/`} title={post.data.title} />
-      ))
-    }
-  </ul>
 
-  <div class="blog-table">
-	<div class="table-title">文章列表</div>
-	<div class="table-container">
-		<table>
-			<tr>
-				<th>标题</th>
-				<th>📆︎</th>
-				<th>💬︎</th>
-			</tr>
-			<tr>
-				<td><a href="/posts/example-post/">示例文章</a></td>
-				<td>2024-06-15</td>
-				<td>X</td>
-			</tr>
-			{
+<Layout pageTitle={pageTitle}>
+	<h1>Posts</h1>
+	<ul>
+		{
 			allPosts.map((post) => (
-				<Post url={`/posts/${post.id}/`} title={post.data.title} />
-				))
-			}
-		</table>
-  	</div>
-	<div class="table-footer">共 {allPosts.length} 篇文章</div>
-  </div>
+				<Post
+					url={`/posts/${post.id}/`}
+					title={post.data.title}
+				/>
+			))
+		}
+	</ul>
+
+	<div class="blog-table">
+		<div class="table-title">文章列表</div>
+		<div class="table-container">
+			<table>
+				<tr>
+					<th>标题</th>
+					<th>📆︎</th>
+					<th>💬︎</th>
+				</tr>
+				<tr>
+					<td
+						><a href="/posts/example-post/"
+							>示例文章</a
+						></td
+					>
+					<td>2024-06-15</td>
+					<td>X</td>
+				</tr>
+				{
+					allPosts.map((post) => (
+						<Post
+							url={`/posts/${post.id}/`}
+							title={post.data.title}
+						/>
+					))
+				}
+			</table>
+		</div>
+		<div class="table-footer">共 {allPosts.length} 篇文章</div>
+	</div>
 </Layout>

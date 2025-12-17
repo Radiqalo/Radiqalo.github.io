@@ -1,47 +1,48 @@
 @import url("https://fontsapi.zeoseven.com/289/main/result.css");
+
 /* Cascadia Next */
 /* #region 字体引入 */
 /* 思源黑体 */
 @font-face {
-  font-family: "Noto Sans SC";
-  src: url("https://scp-wiki-cdn.nyc3.cdn.digitaloceanspaces.com/theme/en/basalt/fonts/NotoSansSC-Regular.woff2") format("woff2");
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
+        font-family: "Noto Sans SC";
+        src: url("https://scp-wiki-cdn.nyc3.cdn.digitaloceanspaces.com/theme/en/basalt/fonts/NotoSansSC-Regular.woff2") format("woff2");
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
 }
 
 @font-face {
-  font-family: "Noto Sans SC";
-  src: url("https://scp-wiki-cdn.nyc3.cdn.digitaloceanspaces.com/theme/en/basalt/fonts/NotoSansSC-Bold.woff2") format("woff2");
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
+        font-family: "Noto Sans SC";
+        src: url("https://scp-wiki-cdn.nyc3.cdn.digitaloceanspaces.com/theme/en/basalt/fonts/NotoSansSC-Bold.woff2") format("woff2");
+        font-style: normal;
+        font-weight: 700;
+        font-display: swap;
 }
 
 /* 思源宋体 */
 @font-face {
-  font-family: "Noto Serif SC";
-  src: url("https://scp-wiki-cdn.nyc3.cdn.digitaloceanspaces.com/theme/en/basalt/fonts/NotoSerifSC-Regular.woff2") format("woff2");
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
+        font-family: "Noto Serif SC";
+        src: url("https://scp-wiki-cdn.nyc3.cdn.digitaloceanspaces.com/theme/en/basalt/fonts/NotoSerifSC-Regular.woff2") format("woff2");
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
 }
 
 @font-face {
-  font-family: "Noto Serif SC";
-  src: url("https://scp-wiki-cdn.nyc3.cdn.digitaloceanspaces.com/theme/en/basalt/fonts/NotoSerifSC-Bold.woff2") format("woff2");
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
+        font-family: "Noto Serif SC";
+        src: url("https://scp-wiki-cdn.nyc3.cdn.digitaloceanspaces.com/theme/en/basalt/fonts/NotoSerifSC-Bold.woff2") format("woff2");
+        font-style: normal;
+        font-weight: 700;
+        font-display: swap;
 }
 
 @font-face {
-  font-family: "InterVariable";
-  src: url("https://rsms.me/inter/font-files/InterVariable.woff2?v=4.1") format("woff2");
-  font-style: normal;
-  font-weight: 100 900;
-  font-display: swap;
-  font-feature-settings: "zero", "ss01", "ss02", "frac", "cv01","cv06", "cv10","cv11", "cv12", "cv13";
+        font-family: "InterVariable";
+        src: url("https://rsms.me/inter/font-files/InterVariable.woff2?v=4.1") format("woff2");
+        font-style: normal;
+        font-weight: 100 900;
+        font-display: swap;
+        font-feature-settings: "zero", "ss01", "ss02", "frac", "cv01", "cv06", "cv10", "cv11", "cv12", "cv13";
 
 }
 
@@ -51,27 +52,27 @@
 } */
 
 @font-face {
-  font-family: "Sans Normalcy";
-  src: url("https://cdn.scpwiki.com/theme/en/sigma/fonts/Sans-Normalcy.woff2") format("woff2");
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
+        font-family: "Sans Normalcy";
+        src: url("https://cdn.scpwiki.com/theme/en/sigma/fonts/Sans-Normalcy.woff2") format("woff2");
+        font-style: normal;
+        font-weight: 700;
+        font-display: swap;
 }
 
 @font-face {
-  font-family: Jost;
-  src: url("https://scp-wiki-cdn.nyc3.cdn.digitaloceanspaces.com/theme/en/basalt/fonts/Jost-Book.woff2") format("woff2");
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
+        font-family: Jost;
+        src: url("https://scp-wiki-cdn.nyc3.cdn.digitaloceanspaces.com/theme/en/basalt/fonts/Jost-Book.woff2") format("woff2");
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
 }
 
 @font-face {
-  font-family: Jost;
-  src: url("https://scp-wiki-cdn.nyc3.cdn.digitaloceanspaces.com/theme/en/basalt/fonts/Jost-Bold.woff2") format("woff2");
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
+        font-family: Jost;
+        src: url("https://scp-wiki-cdn.nyc3.cdn.digitaloceanspaces.com/theme/en/basalt/fonts/Jost-Bold.woff2") format("woff2");
+        font-style: normal;
+        font-weight: 700;
+        font-display: swap;
 }
 
 @font-face {
@@ -106,7 +107,9 @@
         padding-top: 60px;
 } */
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
@@ -115,7 +118,7 @@
 }
 
 body {
-        
+
         font-family: "Noto Sans SC", sans-serif;
         line-height: 1.6;
         background: #fefefe;
@@ -126,12 +129,12 @@ body {
         color: white;
 }
 
-.toppic{
+.toppic {
         background: black;
         height: 40px;
 }
 
-header{
+header {
         position: sticky;
         top: 0;
         left: 0;
@@ -140,7 +143,7 @@ header{
 }
 
 /* #region Footer */
-footer{
+footer {
         position: relative;
         width: 100%;
         box-sizing: border-box;
@@ -148,7 +151,7 @@ footer{
         height: 100%;
 }
 
-footer{
+footer {
         background: gray;
         min-height: 100px;
 }
@@ -162,11 +165,11 @@ nav {
         top: 0;
         left: 0;
         width: 100%;
-        height: 60px; /* 导航栏固定高度 */
+        height: 60px;
+        /* 导航栏固定高度 */
         background-color: #f7f8fa;
         border-bottom: 2px solid #dadbde;
-/*         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
- */        
+        /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
         display: flex;
         justify-content: space-between;
         align-items: stretch;
@@ -174,10 +177,12 @@ nav {
         z-index: 999;
 }
 
-.section-left, .section-right {
+.section-left,
+.section-right {
         display: flex;
         align-items: stretch;
 }
+
 /* #endregion */
 
 /* #region logo */
@@ -186,7 +191,7 @@ nav {
         font-size: 18px;
         font-weight: bold;
         color: black; */
-        
+
 
         font-family: "Sans Normalcy";
         font-size: 45px;
@@ -196,20 +201,23 @@ nav {
         padding-right: 10px;
 }
 
-.logo a{
+.logo a {
         color: black;
         display: block;
         height: 100%;
         display: flex;
         align-items: center;
 }
+
 /* #endregion */
 
 /* #region 菜单组*/
 .menu-group {
         display: flex;
-        gap: 0; /* 去掉按钮间距（可选，同高时无缝更美观） */
-        align-items: stretch; /* 让按钮拉伸至菜单组高度（继承导航栏高度） */
+        gap: 0;
+        /* 去掉按钮间距（可选，同高时无缝更美观） */
+        align-items: stretch;
+        /* 让按钮拉伸至菜单组高度（继承导航栏高度） */
 }
 
 /* #endregion */
@@ -229,7 +237,8 @@ nav {
         position: relative;
         width: 80px;
         height: 100%;
-        /* border: red 1px solid */;
+        /* border: red 1px solid */
+        ;
 }
 
 .dropdown-title {
@@ -241,7 +250,7 @@ nav {
         align-items: center;
         cursor: pointer;
         overflow: hidden;
-        /* border: red 1px solid */;
+        /* border: red 1px solid; */
 }
 
 .dropdown-title {
@@ -253,7 +262,7 @@ nav {
         transition: color 0.2s ease;
 }
 
-.dropdown-btn:hover  .dropdown-title{
+.dropdown-btn:hover .dropdown-title {
         color: white;
 }
 
@@ -291,7 +300,7 @@ nav {
         z-index: -2;
 }
 
-.dropdown-btn:hover  .dropdown-title::after {
+.dropdown-btn:hover .dropdown-title::after {
         transform: scaleY(1);
 }
 
@@ -314,6 +323,7 @@ nav {
         visibility: visible;
         background-color: rgba(255, 255, 255, 0.9);
 }
+
 /* #endregion */
 
 /* #region 左侧竖条 */
@@ -335,13 +345,13 @@ nav {
 .dropdown-btn:hover .dropdown-menu::before {
         transform: scaleX(1);
 }
+
 /* #endregion */
 
 /* #region 菜单项样式 */
 .menu-list {
         list-style: none;
 }
-
 
 .menu-list li a {
         font-family: "Jost", "Noto Sans SC", sans-serif;
@@ -355,22 +365,24 @@ nav {
         z-index: 2;
         position: relative;
 }
+
 .menu-list li a:hover {
         color: white;
         z-index: 4;
 }
 
-.menu-list li{
+.menu-list li {
         position: relative;
         box-sizing: border-box;
         overflow: hidden;
         border-bottom: #ecedee 1px solid;
 }
 
-.menu-list li::after{
+.menu-list li::after {
         content: '';
         display: block;
-        height: 100%;transition: left 0.1s ease-out;
+        height: 100%;
+        transition: left 0.1s ease-out;
         width: 100%;
         background-color: #104cb8;
         z-index: 1;
@@ -386,16 +398,17 @@ nav {
 .menu-list li:hover::after {
         transform: scaleY(1);
 }
+
 /* #endregion */
 /* #endregion */
 
 /* #region 正文框架 */
-main{
+main {
         min-height: 100vh;
         position: relative;
 }
 
-.container{
+.container {
         position: relative;
         top: 10px;
         min-height: 100%;
@@ -414,7 +427,7 @@ main{
 
 /* #region 正文样式 */
 
-h1{
+h1 {
         font-size: 2rem;
         margin-bottom: 1rem;
         color: black;
@@ -422,26 +435,31 @@ h1{
         /* padding-bottom: 2px; */
 }
 
-h1,h2,h3,h4,h5,h6{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
         font-family: "Lexend", "Noto Sans SC", sans-serif;
 }
 
-hr{
+hr {
         border: none;
         border-top: 2px solid #3d47ca;
         margin: 20px 0;
 }
 
-main p a{
+main p a {
         color: #104cb7;
 }
 
-main p a:hover{
+main p a:hover {
         text-decoration: underline;
         text-decoration-thickness: 1px;
 }
 
-main p a:visited{
+main p a:visited {
         color: #121496;
 }
 
@@ -451,7 +469,7 @@ main p a:visited{
         margin-bottom: 20px;
 }
 
-p{
+p {
         font-family: "Inter", "Noto Sans SC", sans-serif;
         font-size: 1.05rem;
         text-align: justify;
@@ -459,7 +477,7 @@ p{
         letter-spacing: 0.5px;
 }
 
-blockquote{
+blockquote {
         font-family: "Inter", "Noto Sans SC", monospace;
         max-width: 900px;
         padding: 10px 15px;
@@ -468,7 +486,7 @@ blockquote{
         margin: 0.5rem auto;
 }
 
-code{
+code {
         background: #f1f1f1;
         padding: 2px 4px;
         border-radius: 4px;
@@ -476,4 +494,5 @@ code{
         margin: 1.5rem 0;
         font-size: 0.9rem;
 }
+
 /* #endregion */
