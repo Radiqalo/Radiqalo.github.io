@@ -1,14 +1,48 @@
 ---
 import TopMenu from "./TopMenu.astro";
+import ThemeIcon from './ThemeIcon.astro';
 ---
 
+<style>
+
+        .open-menu {
+                align-items: center;
+                justify-content: center;
+                display: flex;
+                width: 60px;
+        }
+        </style>
 
 <nav class="nav">
-        <div class="section-left">
-        <div class="logo">
-                <a href="/" id="logo">Radiqal</a>
+
+        <div class="top-bar top1">
+                <div class="open-menu svg">
+                        <svg width="40px" viewBox="0 0 24 24" xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M2.75 4.75h18.5M2.75 12h18.5m-18.5 7.25h18.5"/></svg>
+                </div>
+                <div class="mobile-menu-group">
+                <TopMenu title="About">
+                        <li><a class="nav-menu-item" href="/about">About</a></li>
+                        <li><a class="nav-menu-item" href="/blog">Blog</a></li>
+                        <li><a class="nav-menu-item" href="mailto:radiqal@qq.com">Contact</a></li>     
+                </TopMenu>
+                <TopMenu title="Home">
+                        <li><a class="nav-menu-item" href="/about">About</a></li>
+                        <li><a class="nav-menu-item" href="/blog">Blog</a></li>
+                        <li><a class="nav-menu-item" href="mailto:radiqal@qq.com">Contact</a></li>     
+                </TopMenu>
+                <TopMenu title="Home">
+                        <li><a class="nav-menu-item" href="/about">About</a></li>
+                        <li><a class="nav-menu-item" href="/blog">Blog</a></li>
+                        <li><a class="nav-menu-item" href="mailto:radiqal@qq.com">Contact</a></li>     
+                </TopMenu>
+                </div>
         </div>
-        <div class="menu-group">
+
+        <h1 class="logo top2">
+                <a href="/" id="logo">Radiqal</a>
+        </h1>
+
+        <div class="menu-group top3">
                 <TopMenu title="About">
                         <li><a class="nav-menu-item" href="/about">About</a></li>
                         <li><a class="nav-menu-item" href="/blog">Blog</a></li>
@@ -25,8 +59,17 @@ import TopMenu from "./TopMenu.astro";
                         <li><a class="nav-menu-item" href="mailto:radiqal@qq.com">Contact</a></li>     
                 </TopMenu>
         </div>
+        
+        
+        <search class="search top4">
+                <span class="search-icon svg"><svg width="30" viewBox="0 0 24 24" xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="m21 21l-4.34-4.34"/><circle cx="11" cy="11" r="8"/></g></svg></span>
+                <div 
+                    class="search-input" 
+                    aria-label="搜索"
+                ></div>
+        </search>
+        <!-- themeToggle -->
+        <div class="theme-toggle-container top5">
+        <ThemeIcon />
         </div>
-        <div class="section-right">
-                <TopMenu title="Projects">
-                </TopMenu>
 </nav>

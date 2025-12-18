@@ -1,3 +1,10 @@
 {
-        "C_Cpp.errorSquiggles": "disabled"
+        "C_Cpp.errorSquiggles": "disabled",
+        "iconifySearch.codeType": "svg",
+        "iconifySearch.favorTabs": [],
+        "iconifySearch.favorGroup": "",
+        "iconifySearch.favorIcons": [
+                "ri:bilibili-line",
+                "proicons:menu"
+        ]
 }

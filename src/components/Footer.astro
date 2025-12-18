@@ -1,33 +1,31 @@
 ---
 import Social from "./Social.astro";
 ---
+<style>
+footer {
+        border: red 1px solid;
+}
+.footer {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+
+</style>
+
+
 
 <footer>
         <div class="footer">
-                <div style="width: 50px;height: 50px;background-color: cyan;">
+               <!--  <div style="width: 50px;height: 50px;background-color: cyan;">
                 </div>
                 <span class="iconify" data-icon="mdi:home" data-inline="false"
-                ></span>
-                <div class="tooltip" data-tip="Bilibili">
-                        <a href="www.bilibili.com"></a>
-                </div>
-                <symbol id="lucide--menu" viewBox="0 0 24 24"
-                        ><path
-                                fill="none"
-                                stroke="currentColor"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                stroke-width="2"
-                                d="M4 5h16M4 12h16M4 19h16"></path>
-                </symbol>
+                ></span> -->
 
-                <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        ><use href="#lucide--menu"></use></svg
-                >
+                <!-- <div class="tooltip" data-tip="Bilibili">
+                        <a href="www.bilibili.com"></a>
+                </div> -->
+
+                <a href="#">Back to top</a>
         </div>
         <div class="licence">
                 <p></p>

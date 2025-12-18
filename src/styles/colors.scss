@@ -1,0 +1,38 @@
+:root {
+        /* text and branding */
+        --header-title: var(--title);
+        --title: "Radiqal";
+        --header-subtitle: var(--subtitle);
+        --subtitle: "My Personal Blog";
+
+        /* color palette */
+        --primary-color: #fefefe;
+        --secondary-color: #f7f8fa;
+        --tertiary-color: #dadbde;
+        --main-text-color: #141414;
+        --overtone: #323232;
+        --undertone: #3d47ca;
+        --bright-element-color: #104cb8;
+        --dark-element-color: #121496;
+        --darker-element-color: #080a3c;
+        --alternate-color: #ff8400;
+        --positive-color: #18a314;
+        --negative-color: #ff3030;
+        --sub-text-color: #9b9aa2;
+}
+
+:root[data-theme="parallel"] {
+        --primary-color: #fefefe;
+        --secondary-color: #efeff0;
+        --tertiary-color: #dbdbde;
+        --main-text-color: #141414;
+        --overtone: #141414;
+        --undertone: #bc1e14;
+        --bright-element-color: #cd2814;
+        --dark-element-color: #901414;
+        --darker-element-color: #481414;
+        --alternate-color: #e88414;
+        --positive-color: #18a314;
+        --negative-color: #ff3030;
+        --sub-text-color: #807f82;
+}
