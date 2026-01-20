@@ -1,6 +1,7 @@
 ---
+import { Icon } from "astro-icon/components";
 import TopMenu from "../components/TopMenu.astro";
-import Layout from "../layouts/TauLayout.astro";
+import Layout from "../layouts/Layout.astro";
 import Greeting from "../components/Greeting";
 
 const pageTitle = "Test Page";
@@ -8,11 +9,27 @@ const pageTitle = "Test Page";
 
 <Layout pageTitle={pageTitle}>
 	<style>
+		@import "tailwindcss";
 		.test {
 			height: 60px;
 		}
+
+		[data-icon] {
+			font-size: 2rem;
+			color: var(--main-text-color);
+		}
 	</style>
 	<h1>标题Title</h1>
+	<Icon name="ri:bilibili-line" />
+	<Icon name="ri:qq-line" />
+	<Icon name="ri:wechat-line" />
+	<Icon name="ri:github-fill" />
+	<Icon name="ri:youtube-line" />
+	<Icon name="line-md:cog-loop" />
+	<Icon name="line-md:loading-loop" />
+	
+
+	
 	<div class="image-block block-right" style="width:280px;"><img src="https://cdn.scpwiki.com/theme/en/basalt/basaltlogo.svg" alt="basaltlogo.svg" class="image">
 		<div class="image-caption">
 		<p>插图方块1。</p>

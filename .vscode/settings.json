@@ -1,10 +1,26 @@
 {
         "C_Cpp.errorSquiggles": "disabled",
-        "iconifySearch.codeType": "svg",
+        "iconifySearch.codeType": "tailwindcss",
         "iconifySearch.favorTabs": [],
         "iconifySearch.favorGroup": "",
         "iconifySearch.favorIcons": [
                 "ri:bilibili-line",
-                "proicons:menu"
+                "proicons:menu",
+                "ri:github-fill",
+                "ri:github-line",
+                "ri:qq-line",
+                "ri:wechat-line",
+                "line-md:menu-fold-left",
+                "line-md:menu",
+                "line-md:close-to-menu-transition",
+                "line-md:close-to-menu-alt-transition",
+                "line-md:menu-to-close-alt-transition",
+                "line-md:menu-to-close-transition",
+                "line-md:menu-unfold-left",
+                "uil:search",
+                "line-md:search"
+        ],
+        "github-actions.workflows.pinned.workflows": [
+                ".github/workflows/deploy.yml"
         ]
 }

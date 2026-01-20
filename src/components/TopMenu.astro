@@ -8,3 +8,38 @@ const { title } = Astro.props;
                 </ul>
         </div>
 </div>
+<script is:inline>
+        
+        function setTop() {
+                const isMobile = window.innerWidth <= 768;
+                const parents = document.querySelectorAll('.dropdown-btn');
+                const targets = document.querySelectorAll('.dropdown-menu');
+                /* if (isMobile) {
+                        const parentTop = parent.getBoundingClientRect().bottom;
+                        target.style.top = `${parentTop}px`;
+                } else {
+                        target.style.top = ``;
+                } */
+                for (let i = 0; i < parents.length; i++) {
+                        const parent = parents[i];
+                        const target = targets[i];
+                        if (isMobile) {
+                                const parentTop = parent.getBoundingClientRect().bottom;
+                                target.style.position = 'fixed';
+                                target.style.top = `${parentTop}px`;
+                                target.style.width = '100vw';
+                        } else {
+                                target.style.position = 'absolute';
+                                target.style.top = ``;
+                                target.style.width = '180px';
+                        }
+                }
+        }
+
+        /* window.onload = setTop;
+        window.onresize = setTop;
+        window.scroll = setTop; */
+        window.addEventListener('load', setTop);
+        window.addEventListener('resize', setTop);
+        window.addEventListener('scroll', setTop);
+</script>
