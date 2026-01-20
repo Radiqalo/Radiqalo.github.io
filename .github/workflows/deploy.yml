@@ -31,14 +31,21 @@ jobs:
       - name: 设置 Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '18'
-          cache: 'npm'
+          node-version: '25'
+          cache: 'pnpm'
+
+      - name: 安装 pnpm
+        # 关键改动2：安装 pnpm 包管理器（Ubuntu 环境）
+        uses: pnpm/action-setup@v4
+        with:
+          version: latest # 使用最新版 pnpm，也可指定版本如 9.0.0
+          run_install: false # 先不自动安装依赖，后续手动执行
       
       - name: 安装依赖
-        run: npm ci
+        run: pnpm install --frozen-lockfile
       
       - name: 构建 Astro 网站
-        run: npm run build
+        run: pnpm run build
       
       - name: 上传构建结果
         uses: actions/upload-pages-artifact@v3

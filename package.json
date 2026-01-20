@@ -19,6 +19,7 @@
     "@tailwindcss/vite": "^4.1.18",
     "astro": "^5.16.11",
     "jquery": "^3.7.1",
+    "node-gyp": "^12.1.0",
     "preact": "^10.28.2"
   },
   "devDependencies": {
