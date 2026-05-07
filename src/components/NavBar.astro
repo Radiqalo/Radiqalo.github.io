@@ -1,95 +1,111 @@
 ---
 import TopMenu from "./TopMenu.astro";
-import ThemeIcon from './ThemeIcon.astro';
+import ThemeIcon from "./ThemeIcon.astro";
 import { Icon } from "astro-icon/components";
 ---
 
-
-
 <nav class="nav">
-
-        <div class="top-bar top1">
-                <div class="open-menu svg">
-                       <Icon class="menu-icon" aria-label="Menu" name="uil:bars" />
-                </div>
-                <div class="mobile-menu-group">
-                <TopMenu title="About">
-                        <li><a class="nav-menu-item" href="/about">About</a></li>
-                        <li><a class="nav-menu-item" href="/blog">Blog</a></li>
-                        <li><a class="nav-menu-item" href="mailto:radiqal@qq.com">Contact</a></li>     
-                </TopMenu>
-                <TopMenu title="Home">
-                        <li><a class="nav-menu-item" href="/about">About</a></li>
-                        <li><a class="nav-menu-item" href="/blog">Blog</a></li>
-                        <li><a class="nav-menu-item" href="mailto:radiqal@qq.com">Contact</a></li>     
-                </TopMenu>
-                <TopMenu title="Home">
-                        <li><a class="nav-menu-item" href="/about">About</a></li>
-                        <li><a class="nav-menu-item" href="/blog">Blog</a></li>
-                        <li><a class="nav-menu-item" href="mailto:radiqal@qq.com">Contact</a></li>     
-                </TopMenu>
-                </div>
+    <div class="top-bar top1">
+        <div class="open-menu svg">
+            <Icon class="menu-icon" aria-label="Menu" name="uil:bars" />
         </div>
-
-        <h1 class="logo top2">
-                <a href="/" id="logo">Radiqal</a>
-        </h1>
-
-        <div class="menu-group top3">
-                <TopMenu title="About">
-                        <li><a class="nav-menu-item" href="/about">About</a></li>
-                        <li><a class="nav-menu-item" href="/blog">Blog</a></li>
-                        <li><a class="nav-menu-item" href="mailto:radiqal@qq.com">Contact</a></li>     
-                </TopMenu>
-                <TopMenu title="Home">
-                        <li><a class="nav-menu-item" href="/about">About</a></li>
-                        <li><a class="nav-menu-item" href="/blog">Blog</a></li>
-                        <li><a class="nav-menu-item" href="mailto:radiqal@qq.com">Contact</a></li>     
-                </TopMenu>
-                <TopMenu title="Home">
-                        <li><a class="nav-menu-item" href="/about">About</a></li>
-                        <li><a class="nav-menu-item" href="/blog">Blog</a></li>
-                        <li><a class="nav-menu-item" href="mailto:radiqal@qq.com">Contact</a></li>     
-                </TopMenu>
+        <div class="mobile-menu-group">
+            <TopMenu title="About">
+                <li><a class="nav-menu-item" href="/about">About</a></li>
+                <li><a class="nav-menu-item" href="/blog">Blog</a></li>
+                <li>
+                    <a class="nav-menu-item" href="mailto:radiqal@qq.com"
+                        >Contact</a
+                    >
+                </li>
+            </TopMenu>
+            <TopMenu title="Home">
+                <li><a class="nav-menu-item" href="/test">Test</a></li>
+                <li><a class="nav-menu-item" href="/blog">Blog</a></li>
+                <li>
+                    <a class="nav-menu-item" href="mailto:radiqal@qq.com"
+                        >Contact</a
+                    >
+                </li>
+            </TopMenu>
+            <TopMenu title="Test">
+                <li><a class="nav-menu-item" href="/about">About</a></li>
+                <li><a class="nav-menu-item" href="/blog">Blog</a></li>
+                <li>
+                    <a class="nav-menu-item" href="mailto:radiqal@qq.com"
+                        >Contact</a
+                    >
+                </li>
+            </TopMenu>
         </div>
-        
-        
-        <search class="search top4">
-                <div class="search-container">
-                <Icon class="search-icon" aria-label="Search" name="uil:search" />
-                </div>
-        </search>
-        <!-- themeToggle -->
-        <div class="theme-toggle-container top5" style="position: relative;">
+    </div>
+
+    <h1 class="logo top2">
+        <a href="/" id="logo">Radiqal</a>
+    </h1>
+
+    <div class="menu-group top3">
+        <TopMenu title="About">
+            <li><a class="nav-menu-item" href="/about">About</a></li>
+            <li><a class="nav-menu-item" href="/blog">Blog</a></li>
+            <li>
+                <a class="nav-menu-item" href="mailto:radiqal@qq.com">Contact</a
+                >
+            </li>
+        </TopMenu>
+        <TopMenu title="Home">
+            <li><a class="nav-menu-item" href="/test">Test</a></li>
+            <li><a class="nav-menu-item" href="/blog">Blog</a></li>
+            <li>
+                <a class="nav-menu-item" href="mailto:radiqal@qq.com">Contact</a
+                >
+            </li>
+        </TopMenu>
+        <TopMenu title="Test">
+            <li><a class="nav-menu-item" href="/test">Test</a></li>
+            <li><a class="nav-menu-item" href="/blog">Blog</a></li>
+            <li>
+                <a class="nav-menu-item" href="mailto:radiqal@qq.com">Contact</a
+                >
+            </li>
+        </TopMenu>
+    </div>
+
+    <search class="search top4">
+        <div class="search-container">
+            <Icon class="search-icon" aria-label="Search" name="uil:search" />
+        </div>
+    </search>
+    <!-- themeToggle -->
+    <div class="theme-toggle-container top5" style="position: relative;">
         <ThemeIcon />
-        </div>
+    </div>
 </nav>
 <style>
-        .search {
+    .search {
         width: 60px;
         height: 60px;
-        }
+    }
 
-        .search {
-                border: 0;
-                background: none;
-                position: relative;
-                text-align: center;
-                justify-content: center;
-        }
+    .search {
+        border: 0;
+        background: none;
+        position: relative;
+        text-align: center;
+        justify-content: center;
+    }
 
-        .search-icon {
-                position: relative;
-                color: var(--main-text-color);
-                z-index: 1;
-        }
+    .search-icon {
+        position: relative;
+        color: var(--main-text-color);
+        z-index: 1;
+    }
 
-        .search:hover .search-icon {
-                color: var(--selected-text-color);
-        }
+    .search:hover .search-icon {
+        color: var(--selected-text-color);
+    }
 
-        .theme-toggle-container {
-                height: 60px;
-        }
-
+    .theme-toggle-container {
+        height: 60px;
+    }
 </style>

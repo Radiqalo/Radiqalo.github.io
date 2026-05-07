@@ -1,33 +1,65 @@
 ---
 import Social from "./Social.astro";
 ---
+
 <style>
-footer {
-        border: red 1px solid;
-}
-.footer {
+    footer {
+        /* border: red 1px solid; */
+        a {
+            position: relative;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            border-bottom: var(--sub-text-color) 0.325rem solid;
+            max-width: 100%;
+        }
+    }
+    .footer {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-}
+        font-family: "Jost";
+        color: var(--main-text-color);
+        font-size: 24px;
+        :visited {
+            color: var(--main-text-color);
+        }
+    }
 
+    .aline {
+        width: 100%;
+    }
+    .aline::before {
+        content: "";
+        display: block;
+        height: 3px;
+        background-color: black;
+        margin-block-end: 1px;
+        /*
+        border: red 2px solid;
+        */
+    }
+    .aline::after {
+        content: "";
+        display: block;
+        height: auto;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .licence p {
+        color: var(--main-text-color);
+        position: relative;
+        align-items: center;
+        text-align: center;
+    }
 </style>
 
-
-
 <footer>
-        <div class="footer">
-               <!--  <div style="width: 50px;height: 50px;background-color: cyan;">
-                </div>
-                <span class="iconify" data-icon="mdi:home" data-inline="false"
-                ></span> -->
-
-                <!-- <div class="tooltip" data-tip="Bilibili">
-                        <a href="www.bilibili.com"></a>
-                </div> -->
-
-                <a href="#">Back to top</a>
-        </div>
-        <div class="licence">
-                <p></p>
-        </div>
+    <div class="footer">
+        <a href="#">--- Back to top ---</a>
+    </div>
+    <div class="aline"></div>
+    <div class="licence">
+        <p>Radiqal All Rights Reserved</p>
+    </div>
 </footer>

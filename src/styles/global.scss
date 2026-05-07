@@ -52,7 +52,7 @@
 
 
 /* Cascadia Next */
-/* #region 字体引入 */
+/* #region 字体 */
 /* 思源黑体 */
 @font-face {
         font-family: "Noto Sans SC";
@@ -323,9 +323,7 @@ nav {
 .menu-group {
         display: flex;
         gap: 0;
-        /* 去掉按钮间距（可选，同高时无缝更美观） */
         align-items: stretch;
-        /* 让按钮拉伸至菜单组高度（继承导航栏高度） */
 }
 
 /* #endregion */
@@ -522,11 +520,15 @@ main {
         position: relative;
         top: 10px;
         min-height: 100%;
-        width: 100%;
+        width: 80%;
         max-width: 1080px;
         margin: 0 auto;
         padding: 0 20px;
         box-sizing: border-box;
+
+        @media only screen and (max-width: 768px) {
+                width: 95%;
+        }
 }
 
 /* .container{
